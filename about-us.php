@@ -31,7 +31,7 @@
 									<h2><strong>Facilitating Magic Judging in Oceania</strong></h2>
 									<p>The Oceanic Judge Association is an organisation providing certification and support to Magic: The Gathering Judges and Scorekeepers in the Oceania Region.</p>
 									<p>Our strong, passionate community works in conjunction with local Tournament Organisers to put on excellent events, from Friday Night Magic to Regional Championships. We offer a unique certification-based leveling system, allowing members from all backgrounds to excel.</p>
-									<p>If you would like to join OJA, please visit the signup page <a href="signup.html"><strong>here</strong></a>, and one of our Committee Members will review your application shortly.</p>
+									<p>If you would like to join OJA, please visit the signup page <a href="signup.php"><strong>here</strong></a>, and one of our Committee Members will review your application shortly.</p>
 									<br><br>
 									<h3>The Legal Stuff:</h3>
 									<p style="text-align:left;">

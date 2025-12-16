@@ -1605,8 +1605,8 @@ input, select, textarea {
 		ul.divided li {
 			border-top: solid 2px #e5e5e5;
 			padding-left: 0;
-			margin: 2.5em 0 0 0;
-			padding: 2.5em 0 0 0;
+			margin: 2em 0 0 0;
+			padding: 1em 0 0 0;
 		}
 
 			ul.divided li:first-child {
@@ -1672,6 +1672,7 @@ input, select, textarea {
 		-ms-transition: background-color 0.25s ease-in-out;
 		transition: background-color 0.25s ease-in-out;
 		-webkit-appearance: none;
+		appearance: none;
 		display: block;
 		border: 0;
 		background: #e8e8e8;
@@ -1767,6 +1768,7 @@ input, select, textarea {
 		-ms-transition: all 0.25s ease-in-out;
 		transition: all 0.25s ease-in-out;
 		-webkit-appearance: none;
+		appearance: none;
 		position: relative;
 		display: inline-block;
 		background: #ed786a;
@@ -1841,6 +1843,10 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	.box.excerpt > p {
+		margin-bottom: 1em;
+	}
+
 	.box.excerpt .date {
 		background: #878787;
 		color: #fff;
@@ -1853,7 +1859,73 @@ input, select, textarea {
 		font-size: 0.85em;
 		letter-spacing: 2px;
 		padding: 0.25em 1em 0.25em 1em;
-		margin: 0 0 2.5em 0;
+		margin: 1em 0 1em 0;
+	}
+
+/* First Box Only */
+
+	.no-sidebar .box.post > header {
+		text-align: center;
+	}
+
+	ul.divided .box.excerpt1 {
+ 	   	padding: 0 2em 0 0;
+		margin: 0 2em 0 0;
+		box-sizing: border-box;
+		width: inherit;
+	}
+
+	.box.excerpt1 > p {
+		margin-bottom: 1em;
+	}
+
+	.box.excerpt1 .date {
+		background: #878787;
+		color: #fff;
+		font-weight: 400;
+		text-transform: uppercase;
+		border-radius: 4px;
+		border: 0;
+		box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
+		display: inline-block;
+		font-size: 0.85em;
+		letter-spacing: 2px;
+		padding: 0.25em 1em 0.25em 1em;
+		margin: 6em 0 1em 0;
+	}
+	.box.excerpt1 {
+		max-width: 433px;
+		position: fixed;
+	}
+
+	
+	@media screen and (max-width: 1680px) {
+		.box.excerpt1 {
+			width: 2em;
+			max-width: 360px;
+			position: fixed;
+		}
+	}
+
+	@media screen and (max-width: 1280px) {
+		.box.excerpt1 {
+			width: calc(100% - 80px);
+			position: fixed;
+		}
+	}
+
+	@media screen and (max-width: 980px) {
+		.box.excerpt1 {
+			width: calc(100% - 100px);
+			position: relative;
+		}
+	}
+
+	@media screen and (max-width: 736px) {
+		.box.excerpt1 {
+			width: calc(100% - 40px);
+			position: relative;
+		}
 	}
 
 /* Icons */
@@ -2250,6 +2322,8 @@ input, select, textarea {
 				font-size: 13pt;
 			}
 
+			
+
 	}
 
 /* Large */
@@ -2356,7 +2430,25 @@ input, select, textarea {
 		/* Header */
 
 			#header > .container {
-			padding: 4em 0 0 0;
+				padding: 4em 0 0 0;
+			}
+
+		/* Box & First Box */
+		
+			.box.excerpt .date {
+				margin: 1em 0 1em 0;	
+			}	
+		
+			.box.excerpt1 .date {
+				margin: 1em 0 1em 0;
+				border-top: solid 2px #e5e5e5;
+			}
+
+			/* Add border for first child of divided class when on mobile and small screens. I dont know why it only works if I add it back in here please fix if you figure it out I give up it looks crap on mobile and tablet if I do it any other way.*/
+			ul.divided li:first-child {
+				border-top: solid 2px #e5e5e5;
+				margin-top: 1em;
+				padding-top: 1em;
 			}
 
 		/* Nav */
@@ -2613,6 +2705,12 @@ input, select, textarea {
 		/* Box */
 
 			.box.excerpt header {
+				text-align: center;
+			}
+
+		/* First Box Only */
+
+			.box.excerpt1 header {
 				text-align: center;
 			}
 

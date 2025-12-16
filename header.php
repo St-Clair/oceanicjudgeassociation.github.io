@@ -6,6 +6,7 @@
 				<ul>
 					<li><a class="icon solid fa-home" href="index.php"><span>Home</span></a></li>
 					<li><a class="icon solid fa-sitemap" href="about-us.php"><span>About Us</span></a></li>
+					<li><a class="icon solid " href="signup.php"><span>Signup</span></a></li>
 					<li>
 						<a href="blog-posts.php" class="icon solid fa-retweet"><span>Blog Posts</span></a>
 						<ul>
@@ -35,8 +36,8 @@
 							</li>
 						</ul>
 					</li>
-					<li><a class="social" href="https://www.facebook.com/MagicJudges"><img src="images/facebook.svg" alt="MTG Judge Facebook"/><h4>MTG Judge Facebook</h4></a></li>
-					<li><a class="social" href="https://x.com/MagicJudges"><img src="images/twitter.svg" alt="MTG Judge Twitter" title="MTG Judge Twitter"/><h4>MTG Judge Twitter</h4></a></li>
+					<li><a class="icon fa-brands fa-facebook" href="https://www.facebook.com/MagicJudges"><h4>MTG Judge Facebook</h4></a></li>
+					<li><a class="icon fa-brands fa-twitter" href="https://x.com/MagicJudges"><h4>MTG Judge Twitter</h4></a></li>
 				</ul>
 			</nav>
 		</div>

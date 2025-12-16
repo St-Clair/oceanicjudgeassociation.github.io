@@ -48,7 +48,7 @@
 											Learn about how to become a certified Judge, <br><strong>click the shiny button below!</strong><br>
 										</p>
 										<ul class="actions">
-											<li><a href="#" class="button icon solid fa-file">Become a Judge</a></li>
+											<li><a href="signup.php" class="button icon solid"><img src="images/external.svg"> Become a Judge</a></li>
 										</ul>
 									</section>	
 
